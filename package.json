@@ -1,0 +1,31 @@
+{
+  "name": "qa-axiompro-automation",
+  "version": "1.0.0",
+  "description": "Page Object Model automation framework for qa.axiompro.biz",
+  "main": "index.js",
+  "scripts": {
+    "test": "playwright test",
+    "test:login": "playwright test tests/login.test.js",
+    "test:dashboard": "playwright test tests/dashboard.test.js",
+    "test:headed": "playwright test --headed",
+    "test:debug": "playwright test --debug",
+    "test:ui": "playwright test --ui",
+    "test:report": "playwright show-report",
+    "install:browsers": "playwright install"
+  },
+  "keywords": [
+    "playwright",
+    "automation",
+    "pom",
+    "page-object-model",
+    "testing"
+  ],
+  "author": "QA Automation Engineer",
+  "license": "MIT",
+  "devDependencies": {
+    "@playwright/test": "^1.40.0"
+  },
+  "engines": {
+    "node": ">=16.0.0"
+  }
+}
